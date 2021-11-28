@@ -1,0 +1,90 @@
+<html>
+ <head>
+    <title>W&M</title>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat|Staatliches&display=swap' rel='stylesheet'/> 
+        <link href="estilo.css" rel="stylesheet">
+    </head>
+
+   <style>
+    *{margin:0 ; padding:0 ;box-sizing: border-box; }
+     body{
+        background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+         }
+
+     form{
+         background-color:#FFFFFFFF;
+         max-width: 500px;
+         width: 70%;
+         padding: 20px;
+         position: absolute;
+         left:50%;
+         top: 50%;
+         transform: translate(-50%,-50%);
+         border-radius: 30px;
+        }
+         form h3{
+             text-align:center ;
+             color:05f77;
+             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        form input[type= text],
+        form input[type= password]{
+            width: 100%;
+            height:45px;
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 10px 0;
+        }
+
+        form input[type=submit]{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background:#5353df;
+            color: white;
+            border:0;
+            border-radius: 20px;
+            transition: 2s;
+        }
+
+        form input[type=submit]:hover {
+            background-color: blue;
+        }
+        button {
+            border-radius: 30px;
+            color:#FFFFFFFF;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size:10px;
+            margin: 4px;
+            transition-duration:1s;
+            cursor: pointer;
+        }
+        button{
+            background-color: white;
+            color:rgb(63, 63, 230);
+            border-radius: 2px solid rgb(152, 152, 250);
+        }
+        button:hover{
+            background-color:rgb(152, 152, 250);
+            color: white;
+        }
+       
+    </style>
+
+    <body>
+        <div>
+            <form action="../php/login.php" method="POST">
+                <h3>WorldMusic</h3>
+                <input type="text" name="username" placeholder="Username..." size="15">
+                <input type="password" name="senha" placeholder="Senha..." size="15">
+               <input type="submit" value="Entrar">
+                <br><br>
+                <p><button><a href="../html/cadastrar.html">Cadastrar</a></button></p>
+            </form>
+           
+        </div>
+    </body>
+</html>
